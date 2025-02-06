@@ -187,6 +187,18 @@ textarea {
   font-family: "Poppins", sans-serif;
 }
 
+input[type=file]::file-selector-button{
+  border: none;
+
+  background-color: #183457;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px 10px 20px;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  border-radius: 5px;
+}
 
 /* Job Opening Form Container Button*/
 .uniq-jobs-form form button {
@@ -203,3 +215,5 @@ textarea {
   font-weight: 400;
   margin-top: 55px;
 }
+
+
