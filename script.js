@@ -37,6 +37,10 @@ document
         // Reset the date field with the current date
         const currentDate = new Date().toISOString().split("T")[0];
         document.getElementById("date").value = currentDate;
+
+        setTimeout(() => {
+          formResponse.textContent = "";
+        }, 2000);
       })
       .catch((error) => {
         // Display an error message
