@@ -63,7 +63,7 @@
 
           <div class="uniq-jobs-form">
             <h1>Jobs Openings</h1>
-            <form id="contactForm">
+            <form id="uniq-jobscontactForm">
               <label for="name">Name : </label>
               <input type="text" id="name" name="name" required />
 
@@ -72,6 +72,17 @@
 
               <label for="message">Message : </label>
               <textarea id="message" name="message" required></textarea>
+
+              <!-- File input field -->
+              <input
+                type="file"
+                id="file"
+                name="file"
+                accept=".pdf, .jpeg, .jpg"
+                required
+              />
+
+              <p id="uniq-jobsformResponse"></p>
 
               <input type="hidden" id="date" name="date" />
 
