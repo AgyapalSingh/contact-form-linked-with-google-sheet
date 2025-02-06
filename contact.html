@@ -4,75 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <form id="contactForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
+    <div class="Header"></div>
+    <section class="uniq-affilate">
+      <div class="uniq-affilate-container">
+        <div class="uniq-aff-info">
+          <h1>Join our Affiliate program</h1>
+          <div class="empty-div-inaff"></div>
+          <p class="uniq-aff-info-para">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            pariatur, quidem cum, modi ratione tempore cumque ad esse voluptatum
+            ipsam ea sed doloremque id enim beatae. Commodi placeat praesentium
+            minus autem aut eligendi tempora nobis vitae, quam voluptatibus
+            blanditiis dolores accusamus vel adipisci repudiandae incidunt
+            minima laudantium corrupti iusto natus obcaecati similique beatae.
+            Animi iusto odio error perferendis quasi vitae inventore repellat
+            culpa tempore, velit, nobis fugiat quisquam sit mollitia eos
+            suscipit eveniet! Sit voluptates voluptatem delectus quia quos
+            consequatur unde deserunt vero atque explicabo ex voluptatibus
+            placeat, quo totam temporibus et iste labore incidunt doloribus.
+            Minus recusandae necessitatibus quis.
+          </p>
+        </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+        <div class="uniq-form-sec-title">
+          <h1>Connect With Us</h1>
+        </div>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
+        <div class="uniq-contact-forms">
+          <div class="uniq-aff-form">
+            <h1>Affiliate Program</h1>
+            <form id="contactForm">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
 
-      <input type="hidden" id="date" name="date" />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
 
-      <button type="submit">Submit</button>
-    </form>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
 
-    <div
-      id="formResponse"
-      style="margin-top: 20px; color: green; font-family: Arial, sans-serif"
-    ></div>
+              <input type="hidden" id="date" name="date" />
 
-    <script>
-      // Set the current date in the hidden date field
-      document.addEventListener("DOMContentLoaded", () => {
-        const currentDate = new Date().toISOString().split("T")[0];
-        document.getElementById("date").value = currentDate;
-      });
+              <button type="submit">Submit</button>
+            </form>
 
-      // Attach an event listener to handle form submission
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault(); // Prevent the default form submission behavior
+            <div
+              id="formResponse"
+              style="
+                margin-top: 20px;
+                color: green;
+                font-family: Arial, sans-serif;
+              "
+            ></div>
+          </div>
 
-          // Show a loading message
-          const formResponse = document.getElementById("formResponse");
-          formResponse.textContent = "Submitting your response, please wait...";
+          <div class="uniq-jobs-form">
+            <h1>Jobs Openings</h1>
+            <form id="contactForm">
+              <label for="name">Name : </label>
+              <input type="text" id="name" name="name" required />
 
-          // Gather form data
-          const formData = new FormData(this);
+              <label for="email">Email : </label>
+              <input type="email" id="email" name="email" required />
 
-          // Send data to the Google Apps Script endpoint
-          fetch(
-            "https://script.google.com/macros/s/AKfycbyDxlcu2-o0HddW7_K-dQGzXfphCwR5uwgA0W2d3q5NUElRyMzuCQ3SIH18L5FogHpA/exec",
-            {
-              method: "POST",
-              body: formData,
-            }
-          )
-            .then((response) => response.text())
-            .then((data) => {
-              // Display a success message
-              formResponse.textContent =
-                "Thank you! Your submission has been received.";
+              <label for="message">Message : </label>
+              <textarea id="message" name="message" required></textarea>
 
-              // Reset the form fields
-              document.getElementById("contactForm").reset();
+              <input type="hidden" id="date" name="date" />
 
-              // Reset the date field with the current date
-              const currentDate = new Date().toISOString().split("T")[0];
-              document.getElementById("date").value = currentDate;
-            })
-            .catch((error) => {
-              // Display an error message
-              formResponse.textContent =
-                "An error occurred while submitting. Please try again.";
-            });
-        });
-    </script>
+              <button type="submit">Submit</button>
+            </form>
+
+            <div
+              id="formResponse"
+              style="
+                margin-top: 20px;
+                color: green;
+                font-family: Arial, sans-serif;
+              "
+            ></div>
+          </div>
+        </div>
+
+        <div class="empty-div-inaff"></div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
   </body>
 </html>
