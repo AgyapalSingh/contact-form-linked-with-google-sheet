@@ -248,6 +248,9 @@ input[type="file"]::file-selector-button {
     margin-bottom: 60px;
   }
 
+  .uniq-aff-form form {
+    width: 90%;
+  }
   .uniq-aff-form h1 {
     margin-bottom: 40px;
     font-size: 18px;
@@ -258,8 +261,12 @@ input[type="file"]::file-selector-button {
     font-size: 14px
   }
 
-  .uniq-jobs-form {
+  .uniq-jobs-form  {
     width: 100%;
+  }
+
+  .uniq-jobs-form form {
+    width: 90%;
   }
   .uniq-jobs-form h1 {
     margin-bottom: 40px;
@@ -270,5 +277,10 @@ input[type="file"]::file-selector-button {
 
   .uniq-jobs-form form label {
     font-size: 14px
+  }
+
+  input[type="file"]::file-selector-button {
+    font-size: 12px;
+    padding: 6px 10px;
   }
 }
