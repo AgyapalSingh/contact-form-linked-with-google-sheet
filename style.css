@@ -212,15 +212,23 @@ input[type="file"]::file-selector-button {
 }
 
 @media screen and (max-width: 768px) {
+  .uniq-affilate-container {
+    width: 90%;
+  }
   .uniq-aff-info {
     height: 100%;
   }
+
   .uniq-aff-info h1 {
     font-size: 24px;
     margin-top: 50px;
     text-align: center;
+    font-weight: 300;
   }
 
+  .uniq-aff-info .empty-div-inaff {
+    height: 2vh;
+  }
   .uniq-aff-info-para {
     padding: 0px 1px;
     font-size: 13px;
