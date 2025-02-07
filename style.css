@@ -240,7 +240,27 @@ input[type="file"]::file-selector-button {
     margin-bottom: 60px;
   }
 
+  .uniq-aff-form h1 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .uniq-aff-form form label {
+    font-size: 14px
+  }
+
   .uniq-jobs-form {
     width: 100%;
+  }
+  .uniq-jobs-form h1 {
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 300;
+  }
+
+  .uniq-jobs-form form label {
+    font-size: 14px
   }
 }
