@@ -13,12 +13,15 @@ document.querySelector(".add-more-links").addEventListener("click", function (ev
   event.preventDefault(); // Prevent default behavior
 
   const additionalLinks = document.querySelector(".additional-links");
+  const button = document.querySelector(".add-more-links");
 
-  // Toggle visibility
+  // Toggle visibility and button text
   if (additionalLinks.style.display === "none" || additionalLinks.style.display === "") {
     additionalLinks.style.display = "flex";
+    button.textContent = "Remove Links";
   } else {
     additionalLinks.style.display = "none";
+    button.textContent = "Add More Links";
   }
 });
 // AFFILIATE FORM
