@@ -10,7 +10,7 @@
     <div class="Header"></div>
     <section class="uniq-affilate">
       <div class="uniq-affilate-container">
-        <div class="uniq-aff-info">
+        <!-- <div class="uniq-aff-info">
           <h1>Join our Affiliate program</h1>
           <div class="empty-div-inaff"></div>
           <p class="uniq-aff-info-para">
@@ -27,7 +27,7 @@
             placeat, quo totam temporibus et iste labore incidunt doloribus.
             Minus recusandae necessitatibus quis.
           </p>
-        </div>
+        </div> -->
 
         <div class="uniq-form-sec-title">
           <h1>Connect With Us</h1>
@@ -43,15 +43,25 @@
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" required />
 
-              <label for="instagram">Instagram Link:</label>
-              <input type="text" id="instagram" name="instagram" required />
+              <label for="social1">Social Link 1:</label>
+              <input type="text" id="social1" name="social1" required />
+
+              <button class="add-more-links">Add More Links</button>
+
+              <div class="additional-links">
+                <label for="social2">Social Link 2: (Optional)</label>
+                <input type="text" id="social2" name="social2" />
+
+                <label for="social3">Social Link 3: (Optional)</label>
+                <input type="text" id="social3" name="social3" />
+              </div>
 
               <label for="message">Message:</label>
               <textarea id="message" name="message" required></textarea>
 
               <input type="hidden" id="date" name="date" />
 
-              <button type="submit">Submit</button>
+              <button type="submit" class="uniq-aff-submit-btn">Submit</button>
             </form>
 
             <div

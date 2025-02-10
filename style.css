@@ -106,6 +106,8 @@
   color: white;
 }
 
+
+
 /* Affiliate Program Form Input*/
 .uniq-aff-form form input {
   height: 40px;
@@ -117,6 +119,8 @@
   color: white;
   font-family: "Poppins", sans-serif;
 }
+
+
 
 /* Affiliate Program Form TextArea*/
 .uniq-aff-form form textarea {
@@ -130,8 +134,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+
+.add-more-links{
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #183457;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 20px 0px;
+ }
+
 /* Affiliate Program Form Button*/
-.uniq-aff-form form button {
+.uniq-aff-form form .uniq-aff-submit-btn  {
   background-color: #ffffff;
   color: #183457;
   height: 50px;
@@ -145,6 +165,16 @@
   font-weight: 400;
   margin-top: 55px;
 }
+
+.additional-links{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+
+
 
 @media screen and (max-width: 768px) {
   .uniq-affilate-container {
@@ -196,3 +226,4 @@
     font-size: 14px;
   }
 }
+

@@ -4,7 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("date").value = currentDate;
 });
 
-
+document.querySelector(".add-more-links").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent any default behavior
+  document.querySelector(".additional-links").style.display = "flex";
+});
 
 // AFFILIATE FORM
 
@@ -24,7 +27,7 @@ document
 
     // Send data to the Google Apps Script endpoint
     fetch(
-      "https://script.google.com/macros/s/AKfycbzRXwQ0qjGBIuHiCZVMvlHmqG4yqMDdKwY7HGqQYpv0O8OGTpS6GerwcOIzEjJeEvqH/exec",
+      "https://script.google.com/macros/s/AKfycbzyK27uHjVUMiREXn5xIu3i0CPGayPNsv0OInpZ46K3yKAi8gm2YuabLl2K284WiBw/exec",
       {
         method: "POST",
         body: formData,
