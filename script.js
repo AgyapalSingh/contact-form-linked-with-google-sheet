@@ -4,11 +4,23 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("date").value = currentDate;
 });
 
-document.querySelector(".add-more-links").addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent any default behavior
-  document.querySelector(".additional-links").style.display = "flex";
-});
+// document.querySelector(".add-more-links").addEventListener("click", function (event) {
+//   event.preventDefault(); // Prevent any default behavior
+//   document.querySelector(".additional-links").style.display = "flex";
+// });
 
+document.querySelector(".add-more-links").addEventListener("click", function (event) {
+  event.preventDefault(); // Prevent default behavior
+
+  const additionalLinks = document.querySelector(".additional-links");
+
+  // Toggle visibility
+  if (additionalLinks.style.display === "none" || additionalLinks.style.display === "") {
+    additionalLinks.style.display = "flex";
+  } else {
+    additionalLinks.style.display = "none";
+  }
+});
 // AFFILIATE FORM
 
 
