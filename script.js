@@ -4,28 +4,32 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("date").value = currentDate;
 });
 
-// document.querySelector(".add-more-links").addEventListener("click", function (event) {
-//   event.preventDefault(); // Prevent any default behavior
-//   document.querySelector(".additional-links").style.display = "flex";
-// });
+document
+  .querySelector(".add-more-links")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent default behavior
 
-document.querySelector(".add-more-links").addEventListener("click", function (event) {
-  event.preventDefault(); // Prevent default behavior
+    const additionalLinks = document.querySelector(".additional-links");
+    const button = document.querySelector(".add-more-links");
+    const inputs = additionalLinks.querySelectorAll("input");
 
-  const additionalLinks = document.querySelector(".additional-links");
-  const button = document.querySelector(".add-more-links");
+    // Toggle visibility and button text
+    if (
+      additionalLinks.style.display === "none" ||
+      additionalLinks.style.display === ""
+    ) {
+      additionalLinks.style.display = "flex";
+      button.textContent = "Remove Links";
+    } else {
+      additionalLinks.style.display = "none";
+      button.textContent = "Add More Links";
 
-  // Toggle visibility and button text
-  if (additionalLinks.style.display === "none" || additionalLinks.style.display === "") {
-    additionalLinks.style.display = "flex";
-    button.textContent = "Remove Links";
-  } else {
-    additionalLinks.style.display = "none";
-    button.textContent = "Add More Links";
-  }
-});
+      // Clear input values when hiding
+      inputs.forEach((input) => (input.value = ""));
+    }
+  });
+
 // AFFILIATE FORM
-
 
 // Attach an event listener to handle form submission
 document
@@ -71,4 +75,3 @@ document
           "An error occurred while submitting. Please try again.";
       });
   });
-
