@@ -24,7 +24,7 @@ document
 
     // Send data to the Google Apps Script endpoint
     fetch(
-      "https://script.google.com/macros/s/AKfycbyDxlcu2-o0HddW7_K-dQGzXfphCwR5uwgA0W2d3q5NUElRyMzuCQ3SIH18L5FogHpA/exec",
+      "https://script.google.com/macros/s/AKfycbzRXwQ0qjGBIuHiCZVMvlHmqG4yqMDdKwY7HGqQYpv0O8OGTpS6GerwcOIzEjJeEvqH/exec",
       {
         method: "POST",
         body: formData,
